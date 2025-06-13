@@ -6,38 +6,77 @@
   <title>Morpho - Objets 3D</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #fff;
       color: #333;
-      padding: 20px;
     }
 
-    h1 {
+    /* Header */
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero / Bandeau */
+    .hero {
+      background: linear-gradient(135deg, #d9e8f2, #f2f7fa);
+      padding: 60px 20px;
       text-align: center;
-      font-size: 3rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
 
-    p.subtitle {
-      text-align: center;
+    .hero p {
       font-size: 1.2rem;
-      color: #666;
-      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    /* Product grid */
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .grid {
       display: grid;
       gap: 1.5rem;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
     .card {
       border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
       overflow: hidden;
       background-color: #fafafa;
       display: flex;
@@ -55,13 +94,11 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
 
-    .card h2 {
+    .card h3 {
       margin: 0 0 10px;
       font-size: 1.2rem;
-      font-weight: 600;
     }
 
     .card p {
@@ -83,41 +120,72 @@
     .card button:hover {
       background-color: #000;
     }
+
+    /* Footer */
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Morpho</h1>
-  <p class="subtitle">Objets design imprimés en 3D, personnalisés pour vous.</p>
+  <!-- Header -->
+  <header>
+    <h1>Morpho</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Produits</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <div class="grid">
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=Support+Téléphone" alt="Support de téléphone" />
-      <div class="card-content">
-        <h2>Support de téléphone</h2>
-        <p>12€</p>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=Boite+Bijoux" alt="Boîte à bijoux" />
-      <div class="card-content">
-        <h2>Boîte à bijoux</h2>
-        <p>18€</p>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=Porte+Clés" alt="Porte-clés personnalisable" />
-      <div class="card-content">
-        <h2>Porte-clés personnalisable</h2>
-        <p>5€</p>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
+  <!-- Bandeau / Hero -->
+  <div class="hero">
+    <h2>Impression 3D créative & sur mesure</h2>
+    <p>Commandez des objets uniques et personnalisés, imprimés localement.</p>
   </div>
+
+  <!-- Produits -->
+  <section class="section">
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Support+Téléphone" alt="Support de téléphone" />
+        <div class="card-content">
+          <h3>Support de téléphone</h3>
+          <p>12€</p>
+          <button>Ajouter au panier</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Boite+Bijoux" alt="Boîte à bijoux" />
+        <div class="card-content">
+          <h3>Boîte à bijoux</h3>
+          <p>18€</p>
+          <button>Ajouter au panier</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Porte+Clés" alt="Porte-clés personnalisable" />
+        <div class="card-content">
+          <h3>Porte-clés personnalisable</h3>
+          <p>5€</p>
+          <button>Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Morpho. Tous droits réservés. | Site par Morpho Design Studio
+  </footer>
 
 </body>
 </html>
