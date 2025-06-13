@@ -1,56 +1,123 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react";
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morpho - Objets 3D</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+    }
 
-const products = [
-  {
-    id: 1,
-    name: "Support de téléphone",
-    price: "12€",
-    image: "https://via.placeholder.com/300x200?text=Support+Téléphone",
-  },
-  {
-    id: 2,
-    name: "Boîte à bijoux",
-    price: "18€",
-    image: "https://via.placeholder.com/300x200?text=Boite+Bijoux",
-  },
-  {
-    id: 3,
-    name: "Porte-clés personnalisable",
-    price: "5€",
-    image: "https://via.placeholder.com/300x200?text=Porte+Clés",
-  },
-];
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
 
-export default function MorphoShop() {
-  return (
-    <div className="min-h-screen bg-white px-4 py-8 md:px-12 lg:px-24">
-      <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">Morpho</h1>
-      <p className="text-center text-gray-500 mb-10 text-lg">
-        Objets design imprimés en 3D, personnalisés pour vous.
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {products.map((product) => (
-          <Card key={product.id} className="rounded-2xl shadow-md">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="rounded-t-2xl w-full h-48 object-cover"
-            />
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                {product.name}
-              </h2>
-              <p className="text-gray-600 mb-4">{product.price}</p>
-              <Button className="w-full flex gap-2 items-center">
-                <ShoppingCart size={18} /> Ajouter au panier
-              </Button>
-            </CardContent>
-          </Card>
-        ))}
+    p.subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: #fafafa;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin: 0 0 16px;
+      color: #555;
+    }
+
+    .card button {
+      padding: 10px;
+      border: none;
+      background-color: #333;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Morpho</h1>
+  <p class="subtitle">Objets design imprimés en 3D, personnalisés pour vous.</p>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Support+Téléphone" alt="Support de téléphone" />
+      <div class="card-content">
+        <h2>Support de téléphone</h2>
+        <p>12€</p>
+        <button>Ajouter au panier</button>
       </div>
     </div>
-  );
-}
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Boite+Bijoux" alt="Boîte à bijoux" />
+      <div class="card-content">
+        <h2>Boîte à bijoux</h2>
+        <p>18€</p>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Porte+Clés" alt="Porte-clés personnalisable" />
+      <div class="card-content">
+        <h2>Porte-clés personnalisable</h2>
+        <p>5€</p>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
