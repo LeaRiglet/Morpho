@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devenir imprimeur - Morpho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      font-weight: bold;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Devenir imprimeur partenaire</h1>
+    <p>
+      Vous possédez une imprimante 3D ? Rejoignez le réseau Morpho et imprimez des objets pour nos clients près de chez vous.
+      Gagnez de l’argent en valorisant votre équipement !
+    </p>
+
+    <form>
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="ville">Ville / Code postal</label>
+      <input type="text" id="ville" name="ville" required>
+
+      <label for="machine">Type d’imprimante(s) 3D</label>
+      <input type="text" id="machine" name="machine" placeholder="Ex: Ender 3 V2, Prusa i3..." required>
+
+      <label for="message">Message ou précision</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Envoyer ma candidature</button>
+    </form>
+  </div>
+</body>
+</html>
