@@ -1,0 +1,50 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+
+export default function HomePage() {
+  return (
+    <div className="bg-[#f4f1ed] text-[#3e2c23] min-h-screen font-serif">
+      <header className="border-b border-[#d6cbb8] p-6 shadow-sm bg-[#eae2d6]">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <h1 className="text-3xl font-bold tracking-wide">Scripture</h1>
+          <nav className="space-x-6 text-lg">
+            <a href="#catalogue" className="hover:underline">Catalogue</a>
+            <a href="#echanges" className="hover:underline">Échanges</a>
+            <a href="#contact" className="hover:underline">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="max-w-6xl mx-auto p-8">
+        <section className="text-center py-12">
+          <h2 className="text-4xl font-bold mb-4">À la recherche de livres anciens ?</h2>
+          <p className="text-lg mb-6">Achetez, échangez et découvrez des ouvrages oubliés avec Scripture.</p>
+          <div className="max-w-md mx-auto flex gap-2">
+            <Input placeholder="Titre, auteur ou siècle..." className="bg-[#fffdf9]" />
+            <Button className="bg-[#7a5c42] hover:bg-[#6b5038] text-white">Rechercher</Button>
+          </div>
+        </section>
+
+        <section id="catalogue" className="py-10">
+          <h3 className="text-3xl font-semibold mb-6 border-b border-[#d6cbb8] pb-2">Catalogue en vedette</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[1, 2, 3].map((book) => (
+              <Card key={book} className="bg-[#fffdf9] border-[#d6cbb8]">
+                <CardContent className="p-4">
+                  <h4 className="text-xl font-semibold mb-2">Titre du Livre #{book}</h4>
+                  <p className="text-sm mb-2">Auteur inconnu • XVIIIe siècle</p>
+                  <p className="text-sm">État : Bon • En vente</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" className="bg-[#eae2d6] text-sm text-center p-6 mt-12 border-t border-[#d6cbb8]">
+        <p>&copy; 2025 Scripture • Livres anciens et échanges littéraires</p>
+      </footer>
+    </div>
+  );
+}
