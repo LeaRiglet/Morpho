@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <header className="bg-gray-900 text-white px-8 py-5 flex justify-between items-center">
+<header className="sticky top-0 z-50 bg-gray-900 text-white px-8 py-5 flex justify-between items-center">
       <h1 className="text-xl tracking-wide font-semibold">
         <Link to="/" className="text-inherit no-underline">
           Morpho
