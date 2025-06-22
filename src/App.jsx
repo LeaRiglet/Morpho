@@ -1,26 +1,15 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import DevenirImprimeur from './pages/DevenirImprimeur'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <Router basename="/Morpho">
-      <header>
-        <h1>
-          <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
-            Morpho
-          </Link>
-        </h1>
-        <nav>
-          <Link to="/">Accueil</Link>
-          <Link to="/products">Produits</Link>
-          <Link to="/devenir-imprimeur">Imprimeur ?</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-      </header>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
