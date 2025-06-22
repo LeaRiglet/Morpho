@@ -4,7 +4,6 @@ import DevenirImprimeur from './pages/DevenirImprimeur'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import Terms from './pages/Terms'
-import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 

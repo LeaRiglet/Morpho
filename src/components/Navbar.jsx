@@ -2,17 +2,17 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <header>
-      <h1>
-        <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+    <header className="bg-gray-900 text-white px-8 py-5 flex justify-between items-center">
+      <h1 className="text-xl tracking-wide font-semibold">
+        <Link to="/" className="text-inherit no-underline">
           Morpho
         </Link>
       </h1>
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/products">Produits</Link>
-        <Link to="/devenir-imprimeur">Imprimeur ?</Link>
-        <Link to="/contact">Contact</Link>
+      <nav className="flex space-x-5 font-medium">
+        <Link className="hover:underline" to="/">Accueil</Link>
+        <Link className="hover:underline" to="/products">Produits</Link>
+        <Link className="hover:underline" to="/devenir-imprimeur">Imprimeur ?</Link>
+        <Link className="hover:underline" to="/contact">Contact</Link>
       </nav>
     </header>
   );
