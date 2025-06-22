@@ -1,5 +1,18 @@
 
 import ROIChart from '../components/ROIChart'
+import confetti from 'canvas-confetti'
+
+function triggerConfetti(event) {
+  const rect = event.currentTarget.getBoundingClientRect()
+  confetti({
+    particleCount: 80,
+    spread: 70,
+    origin: {
+      x: (rect.left + rect.width / 2) / window.innerWidth,
+      y: (rect.top + rect.height / 2) / window.innerHeight,
+    },
+  })
+}
 
 function Home() {
   return (
@@ -18,7 +31,7 @@ function Home() {
             <div className="card-content">
               <h3>Support de téléphone</h3>
               <p>12€</p>
-              <button>Ajouter au panier</button>
+              <button onClick={triggerConfetti}>Ajouter au panier</button>
             </div>
           </div>
 
@@ -29,7 +42,7 @@ function Home() {
             <div className="card-content">
               <h3>Boîte à bijoux</h3>
               <p>18€</p>
-              <button>Ajouter au panier</button>
+              <button onClick={triggerConfetti}>Ajouter au panier</button>
             </div>
           </div>
 
@@ -40,7 +53,7 @@ function Home() {
             <div className="card-content">
               <h3>Porte-clés personnalisable</h3>
               <p>5€</p>
-              <button>Ajouter au panier</button>
+              <button onClick={triggerConfetti}>Ajouter au panier</button>
             </div>
           </div>
         </div>
