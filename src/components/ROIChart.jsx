@@ -54,6 +54,7 @@ const data = {
 
 const options = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       position: 'bottom',
@@ -63,8 +64,26 @@ const options = {
       text: 'ROI estimé en fonction du nombre de requêtes',
     },
   },
+  scales: {
+    x: {
+      title: {
+        display: true,
+        text: "Requêtes/mois"
+      }
+    },
+    y: {
+      title: {
+        display: true,
+        text: "ROI (%)"
+      }
+    }
+  }
 };
 
 export default function ROIChart() {
-  return <Line data={data} options={options} />;
+  return (
+    <div style={{ width: "100%", maxWidth: 1000, margin: "0 auto", height: 400 }}>
+      <Line data={data} options={options} height={400} width={1000} />
+    </div>
+  );
 }
