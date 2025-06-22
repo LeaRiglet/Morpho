@@ -1,24 +1,23 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import DevenirImprimeur from './pages/DevenirImprimeur'
+import Products from './pages/Products'
+import Contact from './pages/Contact'
 import './App.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <Router basename="/Morpho">
-      <header>
-        <h1>Morpho</h1>
-        <nav>
-          <Link to="/">Accueil</Link>
-          <a href="/#produits">Produits</a>
-          <Link to="/devenir-imprimeur">Imprimeur ?</Link>
-          <a href="#">Contact</a>
-        </nav>
-      </header>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/devenir-imprimeur" element={<DevenirImprimeur />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
