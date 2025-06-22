@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@carton-org/react-neumorphism';
 
 function DevenirImprimeur() {
   return (
@@ -76,12 +77,14 @@ function DevenirImprimeur() {
               ></textarea>
             </div>
 
-            <button
-              className="w-full py-5 bg-gray-200 rounded-3xl font-extrabold text-gray-700 shadow-neumorphism-btn hover:shadow-neumorphism-btn-hover transition duration-300"
+            <Button
+              size="md"
+              rounded
+              className="w-full font-extrabold text-gray-700"
               type="submit"
             >
               Envoyer ma candidature
-            </button>
+            </Button>
           </form>
         </div>
       </div>

@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@carton-org/react-neumorphism": "^1.1.13",
     "canvas-confetti": "^1.9.3",
     "chart.js": "^3.9.1",
     "react": "^18.2.0",

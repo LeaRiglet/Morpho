@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Terms() {
   return (
-    <div className="container mx-auto max-w-3xl p-8">
+    <div className="container mx-auto max-w-3xl p-8 bg-gray-200 rounded-3xl shadow-neumorphism">
       <h1 className="text-2xl font-bold mb-4">Conditions d'utilisation</h1>
       <p>
         Ce site est un projet personnel réalisé à titre expérimental et n’a aucune vocation commerciale. Il ne génère aucun revenu et n’est pas destiné à un usage professionnel.
