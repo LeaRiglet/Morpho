@@ -1,4 +1,5 @@
 import { Line } from 'react-chartjs-2';
+import { useEffect, useRef, useState } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -87,9 +88,33 @@ const options = {
 };
 
 export default function ROIChart() {
+  const containerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div style={{ width: "100%", maxWidth: 1000, margin: "0 auto", height: 400 }}>
-      <Line data={data} options={options} height={400} width={1000} />
+    <div
+      ref={containerRef}
+      style={{ width: "100%", maxWidth: 1000, margin: "0 auto", height: 400 }}
+    >
+      {visible && <Line data={data} options={options} height={400} width={1000} />}
     </div>
   );
 }
