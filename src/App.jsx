@@ -9,7 +9,11 @@ function App() {
   return (
     <Router basename="/Morpho">
       <header>
-        <h1>Morpho</h1>
+        <h1>
+          <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+            Morpho
+          </Link>
+        </h1>
         <nav>
           <Link to="/">Accueil</Link>
           <Link to="/products">Produits</Link>
