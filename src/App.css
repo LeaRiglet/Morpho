@@ -191,3 +191,86 @@ button {
 button:hover {
   background-color: #000;
 }
+
+/* --- Products Page Styles --- */
+.products-main {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 24px;
+  background: #f7fafc;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.products-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #1a237e;
+  letter-spacing: 1px;
+}
+
+.products-subtitle {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(30, 41, 59, 0.08);
+  padding: 24px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+  border: 1px solid #e3e8ee;
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(30, 41, 59, 0.13);
+  border-color: #b3b8d0;
+}
+
+.product-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1.2rem;
+  border-radius: 12px;
+  background: #f0f4f8;
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.07);
+}
+
+.product-name {
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.3rem 0;
+  color: #222b45;
+  text-align: center;
+}
+
+.product-desc {
+  font-size: 1rem;
+  color: #5a6270;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin-top: 0.2rem;
+  letter-spacing: 0.5px;
+}
