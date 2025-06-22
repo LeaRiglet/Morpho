@@ -33,6 +33,12 @@
   transition: box-shadow 0.3s ease-in-out;
 }
 
+.shadow-neumorphism-pressed {
+  box-shadow:
+    inset 2px 2px 5px #bebebe,
+    inset -2px -2px 5px #ffffff;
+}
+
 .shadow-neumorphism-embossed {
   box-shadow:
     inset 4px 4px 6px #bebebe,

@@ -77,7 +77,7 @@ function DevenirImprimeur() {
             </div>
 
             <button
-              className="w-full py-5 rounded-3xl font-extrabold text-white shadow-neumorphism-btn neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400"
+              className="w-full py-5 rounded-3xl font-extrabold text-white shadow-neumorphism-btn neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 active:shadow-neumorphism-pressed"
               type="submit"
             >
               Envoyer ma candidature
