@@ -20,11 +20,12 @@ ChartJS.register(
   Legend
 );
 
-const queries = [1, 3, 5, 8, 12];
+// Simulated number of print jobs per month
+const queries = [1, 5, 10, 15, 20];
 
 function generateROIData(cost) {
-  // assume profit per print of 20€
-  return queries.map(q => ((q * 20) - cost) / cost * 100);
+  // assume revenue of 200€ per job
+  return queries.map(q => ((q * 200) - cost) / cost * 100);
 }
 
 const data = {

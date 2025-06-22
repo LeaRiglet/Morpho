@@ -9,17 +9,6 @@ function Home() {
         <p>Commandez des objets uniques et personnalisés, imprimés localement.</p>
       </div>
 
-      <section className="section" id="mission">
-        <h2>Pourquoi notre mission compte</h2>
-        <p>
-          Morpho met en relation les propriétaires d&rsquo;imprimantes 3D avec les
-          personnes qui souhaitent faire imprimer leurs modèles. Si vous disposez
-          d&rsquo;une imprimante que vous n&rsquo;utilisez pas souvent, c&rsquo;est l&rsquo;occasion de
-          rentabiliser votre matériel en imprimant pour les autres et en
-          expédiant vos créations directement chez eux.
-        </p>
-      </section>
-
       <section className="section" id="produits">
         <div className="grid">
           <div className="card">
@@ -55,6 +44,17 @@ function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="section" id="mission">
+        <h2>Pourquoi notre mission compte</h2>
+        <p>
+          Morpho met en relation les propriétaires d&rsquo;imprimantes 3D avec les
+          personnes qui souhaitent faire imprimer leurs modèles. Si vous disposez
+          d&rsquo;une imprimante que vous n&rsquo;utilisez pas souvent, c&rsquo;est l&rsquo;occasion de
+          rentabiliser votre matériel en imprimant pour les autres et en
+          expédiant vos créations directement chez eux.
+        </p>
       </section>
 
       <section className="section" id="roi">
