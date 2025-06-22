@@ -13,6 +13,7 @@ function Navbar() {
         <Link to="/products">Produits</Link>
         <Link to="/devenir-imprimeur">Imprimeur ?</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/tos">TOS</Link>
       </nav>
     </header>
   );
