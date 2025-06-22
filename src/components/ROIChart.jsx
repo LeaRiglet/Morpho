@@ -32,22 +32,28 @@ const data = {
   labels: queries.map(q => `${q} requêtes/mois`),
   datasets: [
     {
-      label: 'Ender 3',
-      data: generateROIData(200),
+      label: 'Creality K1 Max',
+      data: generateROIData(969),
       borderColor: 'rgba(75, 192, 192, 1)',
       backgroundColor: 'rgba(75, 192, 192, 0.2)',
     },
     {
-      label: 'Prusa i3',
-      data: generateROIData(800),
+      label: 'Prusa MK4',
+      data: generateROIData(1349),
       borderColor: 'rgba(255, 99, 132, 1)',
       backgroundColor: 'rgba(255, 99, 132, 0.2)',
     },
     {
-      label: 'Ultimaker S5',
-      data: generateROIData(6000),
+      label: 'UltiMaker S7',
+      data: generateROIData(9223),
       borderColor: 'rgba(54, 162, 235, 1)',
       backgroundColor: 'rgba(54, 162, 235, 0.2)',
+    },
+    {
+      label: 'Bambu Lab H2D',
+      data: generateROIData(1729),
+      borderColor: 'rgba(255, 206, 86, 1)',
+      backgroundColor: 'rgba(255, 206, 86, 0.2)',
     },
   ],
 };
