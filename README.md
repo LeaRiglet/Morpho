@@ -6,6 +6,12 @@ Morpho est une plateforme qui met en relation les propriétaires d'imprimantes 3
 
 Si vous disposez d'une imprimante 3D que vous n'utilisez pas souvent, c'est l'occasion de rentabiliser votre matériel en imprimant pour les autres et en expédiant vos créations directement chez eux.
 
+## Installation et démarrage
+
+1. Clonez le dépôt sur votre machine.
+2. Exécutez `npm install` pour installer les dépendances.
+3. Lancez `npm run dev` puis ouvrez [http://localhost:5173/Morpho](http://localhost:5173/Morpho) pour accéder à l'application.
+
 ## Pages et routes
 
 - `/` – **Accueil** avec présentation du projet, exemples de produits et le composant `ROIChart`.
