@@ -1,40 +1,54 @@
 @import 'tailwindcss';
 
+/* CSS variables for neumorphism colors */
+:root {
+  --nm-shadow: #bebebe;
+  --nm-shadow-inner: #c1c1c1;
+  --nm-highlight: #ffffff;
+}
+
+/* Dark theme overrides */
+.theme-dark {
+  --nm-shadow: #1a1a1a;
+  --nm-shadow-inner: #111111;
+  --nm-highlight: #333333;
+}
+
 /* Neumorphism styles */
 
 .shadow-neumorphism {
   box-shadow:
-    8px 8px 15px #bebebe,
-    -8px -8px 15px #ffffff;
+    8px 8px 15px var(--nm-shadow),
+    -8px -8px 15px var(--nm-highlight);
 }
 
 .shadow-inner-neumorphism {
   box-shadow:
-    inset 8px 8px 15px #bebebe,
-    inset -8px -8px 15px #ffffff;
+    inset 8px 8px 15px var(--nm-shadow),
+    inset -8px -8px 15px var(--nm-highlight);
 }
 
 .shadow-neumorphism-inner {
   box-shadow:
-    inset 6px 6px 8px #c1c1c1,
-    inset -6px -6px 8px #ffffff;
+    inset 6px 6px 8px var(--nm-shadow-inner),
+    inset -6px -6px 8px var(--nm-highlight);
 }
 
 .shadow-neumorphism-btn {
   box-shadow:
-    6px 6px 8px #bebebe,
-    -6px -6px 8px #ffffff;
+    6px 6px 8px var(--nm-shadow),
+    -6px -6px 8px var(--nm-highlight);
 }
 
 .shadow-neumorphism-btn-hover {
   box-shadow:
-    2px 2px 5px #bebebe,
-    -2px -2px 5px #ffffff;
+    2px 2px 5px var(--nm-shadow),
+    -2px -2px 5px var(--nm-highlight);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .shadow-neumorphism-embossed {
   box-shadow:
-    inset 4px 4px 6px #bebebe,
-    inset -4px -4px 6px #ffffff;
+    inset 4px 4px 6px var(--nm-shadow),
+    inset -4px -4px 6px var(--nm-highlight);
 }
