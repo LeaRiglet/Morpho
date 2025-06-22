@@ -11,7 +11,7 @@ function App() {
   return (
     <Router basename="/Morpho">
       <Navbar />
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-gray-200">
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

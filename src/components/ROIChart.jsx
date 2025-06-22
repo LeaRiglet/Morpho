@@ -112,7 +112,7 @@ export default function ROIChart() {
   return (
     <div
       ref={containerRef}
-      className="w-full max-w-[1000px] mx-auto h-[400px]"
+      className="w-full max-w-[1000px] mx-auto h-[400px] bg-gray-200 rounded-3xl shadow-neumorphism p-4"
     >
       {visible && (
         <Line data={data} options={options} height={400} width={1000} />

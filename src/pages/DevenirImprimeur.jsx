@@ -3,7 +3,7 @@ import React from 'react';
 function DevenirImprimeur() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-200 p-6">
-      <div className="max-w-3xl w-full bg-gray-200 rounded-3xl p-12 relative">
+      <div className="max-w-3xl w-full bg-gray-200 rounded-3xl p-12 relative shadow-neumorphism">
         <div className="relative z-10 bg-gray-200 rounded-3xl p-10 shadow-inner-neumorphism">
           <h1 className="text-4xl font-extrabold mb-6 text-gray-900 text-center tracking-tight">Devenir Imprimeur Partenaire</h1>
           <p className="mb-8 text-lg text-gray-700 text-center max-w-xl mx-auto leading-relaxed">
