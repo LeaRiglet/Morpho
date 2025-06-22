@@ -24,7 +24,7 @@ function Home() {
           <p className="text-lg text-gray-700 mb-8">Commandez des objets uniques personnalisés près de chez vous.</p>
           <Link
             to="/products"
-            className="inline-block px-6 py-3 rounded-full font-semibold shadow-neumorphism-btn neumorphism-btn hover:shadow-neumorphism-btn-hover transition"
+            className="inline-block px-6 py-3 rounded-full font-semibold text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400"
           >
             Découvrir les produits
           </Link>
@@ -38,21 +38,36 @@ function Home() {
             <img src="/Morpho/3d_printed_phone_support.png" alt="Support de téléphone" className="w-full aspect-square object-cover rounded-3xl mb-4" />
             <h3 className="text-lg font-semibold mb-2">Support de téléphone</h3>
             <p className="mb-4 text-gray-600">12€</p>
-            <button onClick={triggerConfetti} className="mt-auto px-4 py-2 rounded-full shadow-neumorphism-btn neumorphism-btn hover:shadow-neumorphism-btn-hover font-semibold">Ajouter au panier</button>
+            <button
+              onClick={triggerConfetti}
+              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold"
+            >
+              Ajouter au panier
+            </button>
           </div>
 
           <div className="rounded-3xl p-6 bg-gray-100 shadow-neumorphism hover:shadow-neumorphism-embossed transition flex flex-col items-center">
             <img src="/Morpho/3d_printed_lockbox.png" alt="Boîte à bijoux" className="w-full aspect-square object-cover rounded-3xl mb-4" />
             <h3 className="text-lg font-semibold mb-2">Boîte à bijoux</h3>
             <p className="mb-4 text-gray-600">18€</p>
-            <button onClick={triggerConfetti} className="mt-auto px-4 py-2 rounded-full shadow-neumorphism-btn neumorphism-btn hover:shadow-neumorphism-btn-hover font-semibold">Ajouter au panier</button>
+            <button
+              onClick={triggerConfetti}
+              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold"
+            >
+              Ajouter au panier
+            </button>
           </div>
 
           <div className="rounded-3xl p-6 bg-gray-100 shadow-neumorphism hover:shadow-neumorphism-embossed transition flex flex-col items-center">
             <img src="/Morpho/3d_printed_key_ring.png" alt="Porte-clés personnalisable" className="w-full aspect-square object-cover rounded-3xl mb-4" />
             <h3 className="text-lg font-semibold mb-2">Porte-clés personnalisable</h3>
             <p className="mb-4 text-gray-600">5€</p>
-            <button onClick={triggerConfetti} className="mt-auto px-4 py-2 rounded-full shadow-neumorphism-btn neumorphism-btn hover:shadow-neumorphism-btn-hover font-semibold">Ajouter au panier</button>
+            <button
+              onClick={triggerConfetti}
+              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold"
+            >
+              Ajouter au panier
+            </button>
           </div>
         </div>
       </section>
