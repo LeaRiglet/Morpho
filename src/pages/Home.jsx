@@ -1,3 +1,4 @@
+
 function Home() {
   return (
     <>
@@ -43,9 +44,6 @@ function Home() {
         </div>
       </section>
 
-      <footer>
-        © 2025 Morpho. Tous droits réservés. | Site par Morpho Design Studio
-      </footer>
     </>
   )
 }
