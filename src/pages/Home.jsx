@@ -24,7 +24,7 @@ function Home() {
           <p className="text-lg text-gray-700 mb-8">Commandez des objets uniques personnalisés près de chez vous.</p>
           <Link
             to="/products"
-            className="inline-block px-6 py-3 rounded-full font-semibold text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400"
+            className="inline-block px-6 py-3 rounded-full font-semibold text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 active:shadow-neumorphism-pressed"
           >
             Découvrir les produits
           </Link>
@@ -40,7 +40,7 @@ function Home() {
             <p className="mb-4 text-gray-600">12€</p>
             <button
               onClick={triggerConfetti}
-              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold"
+              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold active:shadow-neumorphism-pressed"
             >
               Ajouter au panier
             </button>
@@ -52,7 +52,7 @@ function Home() {
             <p className="mb-4 text-gray-600">18€</p>
             <button
               onClick={triggerConfetti}
-              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold"
+              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold active:shadow-neumorphism-pressed"
             >
               Ajouter au panier
             </button>
@@ -64,7 +64,7 @@ function Home() {
             <p className="mb-4 text-gray-600">5€</p>
             <button
               onClick={triggerConfetti}
-              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold"
+              className="mt-auto px-4 py-2 rounded-full text-white shadow-neumorphism-btn transition duration-300 bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:shadow-neumorphism-btn-hover hover:from-indigo-600 hover:via-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-400 font-semibold active:shadow-neumorphism-pressed"
             >
               Ajouter au panier
             </button>
