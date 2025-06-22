@@ -19,6 +19,12 @@ const products = [
     title: "Support de téléphone imprimé 3D",
     description: "Un support stable et design pour votre smartphone, idéal pour le bureau ou la maison.",
     price: "5,00 €"
+  },
+  {
+    image: "/Morpho/3d_printed_benchy.png",
+    title: "Nouveau produit bientôt disponible",
+    description: "Restez à l'affût, un nouveau produit arrive prochainement !",
+    price: "À venir"
   }
 ];
 
