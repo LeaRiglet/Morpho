@@ -32,3 +32,14 @@
     -2px -2px 5px #ffffff;
   transition: box-shadow 0.3s ease-in-out;
 }
+
+.shadow-neumorphism-embossed {
+  box-shadow:
+    inset 4px 4px 6px #bebebe,
+    inset -4px -4px 6px #ffffff;
+}
+
+.neumorphism-btn {
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  color: #333333;
+}
