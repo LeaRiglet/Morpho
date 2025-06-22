@@ -2,6 +2,7 @@
   "name": "morpho",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "homepage": "https://leariglet.github.io/Morpho",
   "scripts": {
     "dev": "vite",
