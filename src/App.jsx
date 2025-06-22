@@ -11,14 +11,18 @@ function App() {
   return (
     <Router basename="/Morpho">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/devenir-imprimeur" element={<DevenirImprimeur />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/tos" element={<Terms />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/devenir-imprimeur" element={<DevenirImprimeur />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/tos" element={<Terms />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   )
 }
