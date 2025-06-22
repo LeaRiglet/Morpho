@@ -9,7 +9,7 @@ function Home() {
       <section className="section" id="produits">
         <div className="grid">
           <div className="card">
-            <img src="https://via.placeholder.com/300x200?text=Support+Téléphone" alt="Support de téléphone" />
+<img src="/Morpho/3d_printed_phone_support.png" alt="Support de téléphone" />
             <div className="card-content">
               <h3>Support de téléphone</h3>
               <p>12€</p>
@@ -18,7 +18,7 @@ function Home() {
           </div>
 
           <div className="card">
-            <img src="https://via.placeholder.com/300x200?text=Boite+Bijoux" alt="Boîte à bijoux" />
+<img src="/Morpho/3d_printed_lockbox.png" alt="Boîte à bijoux" />
             <div className="card-content">
               <h3>Boîte à bijoux</h3>
               <p>18€</p>
@@ -27,7 +27,7 @@ function Home() {
           </div>
 
           <div className="card">
-            <img src="https://via.placeholder.com/300x200?text=Porte+Clés" alt="Porte-clés personnalisable" />
+<img src="/Morpho/3d_printed_key_ring.png" alt="Porte-clés personnalisable" />
             <div className="card-content">
               <h3>Porte-clés personnalisable</h3>
               <p>5€</p>
