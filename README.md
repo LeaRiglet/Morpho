@@ -39,3 +39,25 @@ L'installation des dépendances requiert `npm install`.
 ## Déploiement GitHub Pages
 
 Le fichier `vite.config.js` définit `base: '/Morpho/'` afin que les chemins fonctionnent correctement sur GitHub Pages. Après `npm run build`, publiez le contenu du dossier `dist` sur votre dépôt pour éviter les erreurs 404.
+
+## Lancer le projet en local
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/LeaRiglet/Morpho.git
+   cd Morpho
+   ```
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+3. Démarrez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+
+Une fois le serveur lancé, ouvrez `http://localhost:5173` pour voir l'application.
+
+## Contribuer
+
+Les contributions sont bienvenues ! N'hésitez pas à ouvrir une issue ou proposer une pull request.
