@@ -5,8 +5,8 @@ const GITHUB_URL = "https://github.com/LeaRiglet/Morpho";
 
 export default function Contact() {
   return (
-    <div className="contact-page" style={{ maxWidth: 600, margin: "2rem auto", padding: "2rem", background: "#f9f9f9", borderRadius: 8, boxShadow: "0 2px 8px rgba(0,0,0,0.07)" }}>
-      <h2>Contactez-nous</h2>
+    <div className="max-w-xl mx-auto my-8 p-8 bg-gray-50 rounded shadow">
+      <h2 className="text-2xl font-bold mb-4">Contactez-nous</h2>
       <p>
         Pour toute question, suggestion ou demande de collaboration, n'hésitez pas à nous contacter via notre page GitHub principale :
       </p>
@@ -14,23 +14,12 @@ export default function Contact() {
         href={GITHUB_URL}
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          display: "inline-block",
-          marginTop: "1.5rem",
-          padding: "0.75rem 1.5rem",
-          background: "#24292f",
-          color: "#fff",
-          borderRadius: 4,
-          textDecoration: "none",
-          fontWeight: "bold",
-          fontSize: "1.1rem",
-          boxShadow: "0 1px 4px rgba(36,41,47,0.12)"
-        }}
+        className="inline-block mt-6 px-4 py-3 bg-gray-900 text-white rounded font-bold text-lg shadow"
       >
         Accéder au GitHub Morpho
       </a>
-      <p style={{ marginTop: "2rem" }}>
-        <Link to="/tos">Consulter les conditions d'utilisation</Link>
+      <p className="mt-8">
+        <Link to="/tos" className="underline">Consulter les conditions d'utilisation</Link>
       </p>
     </div>
   );
