@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <footer>
-      © 2025 Morpho. Tous droits réservés. | Site par Morpho Design Studio
+      © 2025 Morpho. Tous droits réservés. | Site par Morpho Design Studio |
+      <Link to="/tos" style={{ marginLeft: '0.25rem' }}>TOS</Link>
     </footer>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GITHUB_URL = "https://github.com/LeaRiglet/Morpho";
 
@@ -28,6 +29,9 @@ export default function Contact() {
       >
         Accéder au GitHub Morpho
       </a>
+      <p style={{ marginTop: "2rem" }}>
+        <Link to="/tos">Consulter les conditions d'utilisation</Link>
+      </p>
     </div>
   );
 }
