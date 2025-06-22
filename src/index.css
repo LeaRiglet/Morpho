@@ -1,4 +1,12 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-200 text-gray-800 font-sans;
+  }
+}
 
 /* Neumorphism styles */
 
