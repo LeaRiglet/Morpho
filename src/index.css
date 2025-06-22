@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+body {
+  background: #e0e0e0;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
 /* Neumorphism styles */
 
 .shadow-neumorphism {

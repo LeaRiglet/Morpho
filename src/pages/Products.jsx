@@ -29,7 +29,7 @@ const products = [
 
 function Products() {
   return (
-    <main className="max-w-5xl mx-auto mt-10 p-6 rounded-lg">
+    <main className="max-w-5xl mx-auto mt-10 p-6 bg-gray-200 rounded-3xl shadow-neumorphism">
       <h2 className="text-3xl font-bold mb-2 text-center text-indigo-900">Nos Produits</h2>
       <p className="text-center text-gray-600 mb-10">
         Découvrez notre sélection d’objets imprimés en 3D, conçus pour allier utilité et originalité.
@@ -37,10 +37,10 @@ function Products() {
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {products.map((product, idx) => (
           <div
-            className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center border transition-transform hover:-translate-y-1 hover:shadow-lg"
+            className="bg-gray-200 rounded-3xl shadow-neumorphism p-6 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-neumorphism-btn-hover"
             key={idx}
           >
-            <img src={product.image} alt={product.title} className="w-32 h-32 object-contain mb-4 rounded-lg bg-gray-100 shadow" />
+            <img src={product.image} alt={product.title} className="w-32 h-32 object-contain mb-4 rounded-2xl bg-gray-200 shadow-inner-neumorphism" />
             <h3 className="text-lg font-semibold mb-1 text-center">{product.title}</h3>
             <p className="text-gray-600 text-center mb-2">{product.description}</p>
             <div className="font-bold text-blue-600">{product.price}</div>
