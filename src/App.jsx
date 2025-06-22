@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Morpho">
       <header>
         <h1>Morpho</h1>
         <nav>
