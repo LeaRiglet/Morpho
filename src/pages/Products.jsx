@@ -37,8 +37,7 @@ function Products() {
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {products.map((product, idx) => (
           <div
-            className="rounded-3xl p-6 flex flex-col items-center bg-white transition-transform hover:-translate-y-1 hover:shadow-neumorphism-embossed"
-            style={{ boxShadow: '0 4px 15px 4px rgba(0, 0, 0, 0.12)' }}
+            className="rounded-3xl p-6 flex flex-col items-center bg-white shadow-neumorphism transition-transform hover:-translate-y-1 hover:shadow-neumorphism-embossed"
             key={idx}
           >
             <img src={product.image} alt={product.title} className="w-32 h-32 object-contain mb-4 rounded-3xl bg-gray-200 shadow-neumorphism-inner" />
